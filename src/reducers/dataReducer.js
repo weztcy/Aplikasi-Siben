@@ -7,11 +7,9 @@ const initialState = {
   
   const dataReducer = (state = initialState, action) => {
     switch (action.type) {
-      // Tambahkan case sesuai action yang Anda butuhkan
       default:
         return state;
     }
   };
   
   export default dataReducer;
-  
