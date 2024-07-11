@@ -9,7 +9,7 @@ function ModalNavbar({ show, onHide, title, bodyText, buttonText }) {
         <Modal.Title>{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <p>{bodyText}</p>
+        <div>{bodyText}</div>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="primary" onClick={onHide}>

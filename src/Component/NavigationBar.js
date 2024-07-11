@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import ModalComponent from "./ModalNavbar";
+import ModalNavbar from "./ModalNavbar";
 import Button from "react-bootstrap/Button";
 
 function NavigationBar() {
@@ -87,11 +87,19 @@ function NavigationBar() {
           <Button variant="primary" onClick={handleShow}>
             Klik Untuk Informasi
           </Button>
-          <ModalComponent
+          <ModalNavbar
             show={modalShow}
             onHide={handleClose}
             title="Informasi"
-            bodyText="Halo selamat datang!! Ini adalah web untuk menampilkan informasi tentang data bencana alam yang terjadi di Indonesia."
+            bodyText={
+              <>
+                Halo selamat datang!!
+                <br />
+                <br />
+                Ini adalah web untuk menampilkan informasi tentang data bencana
+                alam yang terjadi di dunia.
+              </>
+            }
             buttonText="Saya mengerti"
           />
         </Container>
