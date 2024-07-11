@@ -94,7 +94,9 @@ function Berita() {
           linkUrl={article.linkUrl}
         />
       ))}
+      <br/><br/>
     </div>
+    
   );
 }
 
