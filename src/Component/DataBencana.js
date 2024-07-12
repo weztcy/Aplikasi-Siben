@@ -27,7 +27,7 @@ function DataBencana({ itemsPerPage }) {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("https://34.126.120.92:3000/disasters");
+      const response = await axios.get("https://siben.inihikam.my.id/disasters");
       setDataToShow(response.data);
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -36,7 +36,7 @@ function DataBencana({ itemsPerPage }) {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://34.126.120.92:3000/disasters/${id}`);
+      await axios.delete(`https://siben.inihikam.my.id/disasters/${id}`);
       fetchData(); // Refresh data after delete
     } catch (error) {
       console.error("Error deleting data:", error);
@@ -60,7 +60,7 @@ function DataBencana({ itemsPerPage }) {
   const handleSubmitEdit = async (event) => {
     event.preventDefault();
     try {
-      await axios.put(`https://34.126.120.92:3000/disasters/${editData.id}`, {
+      await axios.put(`https://siben.inihikam.my.id/disasters/${editData.id}`, {
         tanggal_bencana: formData.tanggalBencana,
         provinsi: formData.provinsi,
         kota_kabupaten: formData.kotaKabupaten,
@@ -106,7 +106,7 @@ function DataBencana({ itemsPerPage }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("https://34.126.120.92:3000/disasters", {
+      await axios.post("https://siben.inihikam.my.id/disasters", {
         tanggal_bencana: formData.tanggalBencana,
         provinsi: formData.provinsi,
         kota_kabupaten: formData.kotaKabupaten,
