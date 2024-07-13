@@ -4,7 +4,7 @@ import PageCard from "../Component/PageCard";
 import video1 from "../Video/PayAttention.mp4";
 import video2 from "../Video/PeopleSearch.mp4";
 import video3 from "../Video/News.mp4";
-import video4 from "../Video/Weather2.mp4";
+import video4 from "../Video/Weather.mp4";
 import mitigasi from "../Image/Konten/Mitigasi.jpg";
 import tanggapdarurat from "../Image/Konten/TanggapDarurat.jpg";
 import pemulihan from "../Image/Konten/Pemulihan.jpg";
@@ -74,7 +74,7 @@ function Home() {
               cardTitle="Ramalan Cuaca"
               cardText="Perkiraan cuaca yang akan terjadi di kota Semarang."
               videoUrl={video4}
-              linkTo="/informasi"
+              linkTo="/cuaca"
               modalTitle="Informasi Bencana"
               modalContent="Halaman ramalan cuaca di Kota Semarang menyajikan informasi terbaru mengenai kondisi cuaca saat ini dan prakiraan cuaca mendatang di Semarang. Anda dapat menemukan data terkini mengenai suhu udara, kelembapan, kecepatan angin, dan kondisi cuaca."
             />
