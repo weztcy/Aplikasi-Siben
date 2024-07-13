@@ -4,6 +4,7 @@ import PageCard from "../Component/PageCard";
 import video1 from "../Video/PayAttention.mp4";
 import video2 from "../Video/PeopleSearch.mp4";
 import video3 from "../Video/News.mp4";
+import video4 from "../Video/Weather2.mp4";
 import mitigasi from "../Image/Konten/Mitigasi.jpg";
 import tanggapdarurat from "../Image/Konten/TanggapDarurat.jpg";
 import pemulihan from "../Image/Konten/Pemulihan.jpg";
@@ -16,47 +17,66 @@ import Carousel from "react-bootstrap/Carousel";
 import DisasterStepCarousel from "../Component/DisasterStepCarousel";
 import BannerPhoto from "../Component/BannerPhoto";
 import BannerHome from "../Image/Banner/BannerHome.jpeg";
+import bgvideo from "../Video/Lighting.mp4";
+import BackgroundVideo from "../Component/BackgroundVideo";
 
 function Home() {
+  const contentStyle = {
+    position: "relative",
+    zIndex: 0,
+    color: "white",
+    textAlign: "center",
+  };
+
   return (
-    <div className="Home">
+    <div className="Home" style={contentStyle}>
+      <BackgroundVideo src={bgvideo} />
       <NavigationBar />
       <BannerPhoto imageUrl={BannerHome} />
       <h1>Website Siben</h1>
-      <Container></Container>
       <Container
         className="d-flex justify-content-center"
         style={{ marginBottom: "100px" }}
       >
         <Row className="w-100">
-          <Col className="d-flex justify-content-center">
+          <Col className="d-flex justify-content-center" md={3}>
             <PageCard
               cardTitle="Penanganan Bencana"
-              cardText="Strategi dan tindakan penanganan bencana."
+              cardText="Strategi dan tindakan penanganan terhadap bencana alam."
               videoUrl={video1}
               linkTo="/penanganan"
               modalTitle="Penanganan Bencana"
               modalContent="Halaman ini menyediakan informasi komprehensif mengenai strategi dan tindakan yang dilakukan untuk penanganan bencana. Anda dapat menemukan berbagai rencana mitigasi, kesiapsiagaan, respon darurat, dan upaya pemulihan pascabencana."
             />
           </Col>
-          <Col className="d-flex justify-content-center">
+          <Col className="d-flex justify-content-center" md={3}>
             <PageCard
               cardTitle="Data Bencana"
-              cardText="Data terkini mengenai bencana yang terjadi."
+              cardText="Data terkini mengenai bencana yang terjadi di Indonesia."
               videoUrl={video2}
               linkTo="/data"
               modalTitle="Data Bencana"
               modalContent="Halaman ini menampilkan data terkini mengenai berbagai bencana yang terjadi di seluruh dunia. Informasi yang disajikan mencakup jenis bencana, lokasi, tanggal kejadian, serta jumlah korban yang ditimbulkan."
             />
           </Col>
-          <Col className="d-flex justify-content-center">
+          <Col className="d-flex justify-content-center" md={3}>
             <PageCard
               cardTitle="Berita Bencana"
-              cardText="Berita terbaru seputar bencana alam."
+              cardText="Update berita terbaru seputar bencana alam."
               videoUrl={video3}
               linkTo="/berita"
               modalTitle="Berita Bencana"
               modalContent="Halaman ini menyajikan berita terbaru seputar bencana alam yang terjadi di dalam negeri. Anda dapat membaca laporan, analisis, dan liputan langsung dari lokasi bencana, serta perkembangan terbaru mengenai upaya penanganan dan bantuan yang diberikan."
+            />
+          </Col>
+          <Col className="d-flex justify-content-center" md={3}>
+            <PageCard
+              cardTitle="Ramalan Cuaca"
+              cardText="Perkiraan cuaca yang akan terjadi di kota Semarang."
+              videoUrl={video4}
+              linkTo="/informasi"
+              modalTitle="Informasi Bencana"
+              modalContent="Halaman ramalan cuaca di Kota Semarang menyajikan informasi terbaru mengenai kondisi cuaca saat ini dan prakiraan cuaca mendatang di Semarang. Anda dapat menemukan data terkini mengenai suhu udara, kelembapan, kecepatan angin, dan kondisi cuaca."
             />
           </Col>
         </Row>
@@ -93,6 +113,7 @@ function Home() {
           </Carousel.Item>
         </Carousel>
       </Container>
+
       <Footer />
     </div>
   );

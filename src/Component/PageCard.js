@@ -55,10 +55,10 @@ function PageCard({
     <>
       <Card
         style={{
-          width: "23rem",
+          width: "19rem",
           height: "470px",
           transition: "transform 0.2s ease",
-          transform: isHovered ? "scale(1.2)" : "scale(1)",
+          transform: isHovered ? "scale(1.1)" : "scale(1)",
           borderRadius: "25px 10px 25px 10px",
         }}
         onMouseEnter={handleMouseEnter}
@@ -102,7 +102,7 @@ function PageCard({
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              marginTop: "20px",
+              marginTop: "55px",
               marginBottom: "20px", // Adjust the spacing as needed
             }}
           >
