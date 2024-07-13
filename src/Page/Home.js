@@ -16,8 +16,8 @@ import Footer from "../Component/Footer";
 import Carousel from "react-bootstrap/Carousel";
 import DisasterStepCarousel from "../Component/DisasterStepCarousel";
 import BannerPhoto from "../Component/BannerPhoto";
-import BannerHome from "../Image/Banner/BannerHome.jpeg";
-import bgvideo from "../Video/Lighting.mp4";
+import BannerHome from "../Image/Banner/EarthDisaster.jpg";
+import bgvideo from "../Video/LightingTornadoes.mp4";
 import BackgroundVideo from "../Component/BackgroundVideo";
 
 function Home() {

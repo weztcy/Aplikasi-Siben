@@ -4,10 +4,19 @@ import { Container } from 'react-bootstrap';
 import NavigationBar from '../Component/NavigationBar';
 import './RamalanCuaca.css';
 import Footer from '../Component/Footer';
+import bgvideo from "../Video/DayNight.mp4";
+import BackgroundVideo from "../Component/BackgroundVideo";
 
 const Tentang = () => {
+  const contentStyle = {
+    position: "relative",
+    zIndex: 0,
+    color: "white",
+    textAlign: "center",
+  };
   return (
-    <div className="Cuaca">
+    <div className="Cuaca" style={contentStyle}>
+      <BackgroundVideo src={bgvideo} />
       <NavigationBar />
       <Container>
         <h1>Ramalan Cuaca</h1>
