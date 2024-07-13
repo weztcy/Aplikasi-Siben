@@ -45,7 +45,7 @@ function Home() {
               cardText="Strategi dan tindakan penanganan terhadap bencana alam."
               videoUrl={video1}
               linkTo="/penanganan"
-              modalTitle="Penanganan Bencana"
+              modalTitle="Informasi Penanganan Bencana"
               modalContent="Halaman ini menyediakan informasi komprehensif mengenai strategi dan tindakan yang dilakukan untuk penanganan bencana. Anda dapat menemukan berbagai rencana mitigasi, kesiapsiagaan, respon darurat, dan upaya pemulihan pascabencana."
             />
           </Col>
@@ -55,7 +55,7 @@ function Home() {
               cardText="Data terkini mengenai bencana yang terjadi di Indonesia."
               videoUrl={video2}
               linkTo="/data"
-              modalTitle="Data Bencana"
+              modalTitle="Informasi Data Bencana"
               modalContent="Halaman ini menampilkan data terkini mengenai berbagai bencana yang terjadi di seluruh dunia. Informasi yang disajikan mencakup jenis bencana, lokasi, tanggal kejadian, serta jumlah korban yang ditimbulkan."
             />
           </Col>
@@ -65,7 +65,7 @@ function Home() {
               cardText="Update berita terbaru seputar bencana alam."
               videoUrl={video3}
               linkTo="/berita"
-              modalTitle="Berita Bencana"
+              modalTitle="Informasi Berita Bencana"
               modalContent="Halaman ini menyajikan berita terbaru seputar bencana alam yang terjadi di dalam negeri. Anda dapat membaca laporan, analisis, dan liputan langsung dari lokasi bencana, serta perkembangan terbaru mengenai upaya penanganan dan bantuan yang diberikan."
             />
           </Col>
@@ -75,7 +75,7 @@ function Home() {
               cardText="Perkiraan cuaca yang akan terjadi di kota Semarang."
               videoUrl={video4}
               linkTo="/cuaca"
-              modalTitle="Informasi Bencana"
+              modalTitle="Informasi Ramalan Cuaca"
               modalContent="Halaman ramalan cuaca di Kota Semarang menyajikan informasi terbaru mengenai kondisi cuaca saat ini dan prakiraan cuaca mendatang di Semarang. Anda dapat menemukan data terkini mengenai suhu udara, kelembapan, kecepatan angin, dan kondisi cuaca."
             />
           </Col>

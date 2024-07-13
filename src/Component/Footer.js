@@ -60,7 +60,7 @@ const Footer = () => {
                 Youtube
               </span>
             </a>
-            <a href="https://github.com/weztcy" className="text-white me-4">
+            <a href="https://github.com/weztcy" className="text-white">
               <img
                 src={github}
                 alt=""
