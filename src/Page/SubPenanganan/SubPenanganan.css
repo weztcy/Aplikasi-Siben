@@ -32,12 +32,20 @@
   
   .SubPenanganan h1 {
     font-size: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     color: white;
   }
   .SubPenanganan h4 {
     color: white;
+  }
+  .SubPenanganan .Penjelasan {
+    color: white;
+    width: 750px;
+    margin: auto;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 50px
   }
   @keyframes App-logo-spin {
     from {

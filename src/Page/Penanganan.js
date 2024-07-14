@@ -14,6 +14,10 @@ import BadaiPetir from "../Image/Bencana/Thunderstorm.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Penanganan.css";
 import Footer from "../Component/Footer";
+import BannerPhoto from "../Component/BannerPhoto";
+import BannerHome from "../Image/Banner/EarthDisaster.jpg";
+import bgvideo from "../Video/Fire.mp4";
+import BackgroundVideo from "../Component/BackgroundVideo";
 
 function Penanganan() {
   const disasterCards = [
@@ -78,7 +82,12 @@ function Penanganan() {
       link: "/badai-petir",
     },
   ];
-
+  const contentStyle = {
+    position: "relative",
+    zIndex: 0,
+    color: "white",
+    textAlign: "center",
+  };
   const renderDisasterCards = () => {
     return disasterCards.map((card, index) => (
       <Col key={index} md={6} style={{marginBottom: "10px"}}>
@@ -93,7 +102,9 @@ function Penanganan() {
   };
 
   return (
-    <div className="Penanganan">
+    <div className="Penanganan"  style={contentStyle}>
+      <BackgroundVideo src={bgvideo} />
+      <BannerPhoto imageUrl={BannerHome}/>
       <NavigationBar />
       <Container style={{ marginBottom: "80px" }}>
         <h1>Penanganan Bencana</h1>

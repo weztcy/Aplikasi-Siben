@@ -31,8 +31,9 @@ function Home() {
   return (
     <div className="Home" style={contentStyle}>
       <BackgroundVideo src={bgvideo} />
-      <NavigationBar />
       <BannerPhoto imageUrl={BannerHome} />
+      <NavigationBar />
+      
       <h1>Website Siben</h1>
       <Container
         className="d-flex justify-content-center"
@@ -113,7 +114,13 @@ function Home() {
           </Carousel.Item>
         </Carousel>
       </Container>
-
+      <h2>Kantor BPBD Pusat</h2>
+      <iframe
+        width="1300"
+        height="600"
+        style={{ marginBottom: "90px", borderRadius: "20px" }}
+        src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Jl.%20Rw.%20Jaya%20Jl.%20Pramuka%20No.38%2011,%20RT.11/RW.5,%20Utan%20Kayu%20Utara,%20Kec.%20Matraman,%20Kota%20Jakarta%20Timur,%20Daerah%20Khusus%20Ibukota%20Jakarta%2013120%20Semarang+()&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+      ></iframe>
       <Footer />
     </div>
   );

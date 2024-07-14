@@ -6,7 +6,7 @@ const BannerPhoto = ({ imageUrl, altText, title }) => {
 
   const imageStyle = {
     width: '100%',
-    height: '350px',
+    height: '340px',
     objectFit: 'cover'
   };
 

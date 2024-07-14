@@ -12,8 +12,8 @@ import Berita from './Page/Berita';
 import Cuaca from "./Page/RamalanCuaca";
 
 import GempaBumi from "./Page/SubPenanganan/GempaBumi";
-// import Tsunami from "./Page/SubPenanganan/Tsunami";
-// import GunungMeletus from "./Page/SubPenanganan/GunungMeletus";
+import Tsunami from "./Page/SubPenanganan/Tsunami";
+import GunungMeletus from "./Page/SubPenanganan/GunungMeletus";
 // import Banjir from "./Page/SubPenanganan/Banjir";
 // import TanahLongsor from "./Page/SubPenanganan/TanahLongsor";
 // import AnginTopan from "./Page/SubPenanganan/AnginTopan";
@@ -37,8 +37,8 @@ function App() {
 
 
         <Route path="/gempa-bumi" element={<GempaBumi />} />
-        {/* <Route path="/tsunami" element={<Tsunami />} /> */}
-        {/* <Route path="/gunung-meletus" element={<GunungMeletus />} /> */}
+        <Route path="/tsunami" element={<Tsunami />} />
+        <Route path="/gunung-meletus" element={<GunungMeletus />} />
         {/* <Route path="/banjir" element={<Banjir />} /> */}
         {/* <Route path="/tanah-longsor" element={<TanahLongsor />} /> */}
         {/* <Route path="/angin-topan" element={<AnginTopan />} /> */}
