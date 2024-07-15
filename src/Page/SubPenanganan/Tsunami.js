@@ -7,151 +7,188 @@ import step1Image from "../../Image/Konten/Step1.jpg";
 import step2Image from "../../Image/Konten/Step2.jpg";
 import step3Image from "../../Image/Konten/Step3.jpg";
 import BannerPhoto from "../../Component/BannerPhoto";
-import BannerHome from "../../Image/Banner/GempaBumi.jpeg";
+import BannerBencana from "../../Image/Banner/Tsunami.jpeg";
 import Footer from "../../Component/Footer";
 import BencanaOffcard from "../../Component/BencanaOffcard";
-import bgvideo from "../../Video/FireParticles.mp4";
+import bgvideo from "../../Video/SpaceNight.mp4";
 import BackgroundVideo from "../../Component/BackgroundVideo";
 
-const option1 = {
-  name: "Penyebab",
-  scroll: true,
-  backdrop: true,
-  title: "Penyebab Gunung Meletus",
-  text: `
-  Gunung berapi meletus karena adanya tekanan dari magma (batuan cair) yang terbentuk di dalam bumi. Beberapa faktor penyebabnya meliputi:
-  <br><br>
-  <li>Tekanan Magma
-    <ul>
-    Tekanan dari magma yang naik ke permukaan bumi dapat menyebabkan letusan. Magma yang mengandung gas terperangkap memiliki tekanan yang tinggi, dan saat mencapai permukaan, gas tersebut melepaskan tekanan, menyebabkan letusan eksplosif.
-    </ul>
-  </li>
-  <li>Aktivitas Tektonik
-    <ul>
-    Pergerakan lempeng tektonik bisa memicu aktivitas vulkanik. Ketika lempeng-lempeng bumi bertabrakan atau bergeser, magma dari dalam bumi bisa naik ke permukaan melalui retakan atau celah.
-    </ul>
-  </li>
-  <li>Panas Bumi
-    <ul>
-    Panas dari dalam bumi yang sangat tinggi dapat mencairkan batuan dan membentuk magma, yang kemudian bisa naik ke permukaan dan menyebabkan letusan.
-    </ul>
-  </li>
-  `,
-};
+const options = [
+  {
+    name: "Penyebab",
+    scroll: true,
+    backdrop: true,
+    title: "Penyebab Tsunami",
+    text: `
+      Beberapa penyebab utama tsunami meliputi:
+      <br><br>
+      <li>Gempa Bumi Bawah Laut
+        <ul>
+          Ini adalah penyebab paling umum dari tsunami. Ketika gempa bumi terjadi di bawah laut, perubahan mendadak di dasar laut menyebabkan pergeseran besar volume air, menghasilkan gelombang yang bisa menyebar ke seluruh lautan.
+        </ul>
+      </li>
+      <li>Letusan Gunung Berapi
+        <ul>
+          Letusan gunung berapi bawah laut atau di dekat pantai bisa memindahkan sejumlah besar air, memicu tsunami.
+        </ul>
+      </li>
+      <li>Tanah Longsor Bawah Laut
+        <ul>
+          Tanah longsor di dasar laut atau di tepi pantai bisa menggeser air secara tiba-tiba, menyebabkan gelombang tsunami.
+        </ul>
+      </li>
+      <li>Dampak Meteorit
+        <ul>
+          Meskipun jarang, dampak meteorit besar yang jatuh ke laut dapat menyebabkan tsunami.
+        </ul>
+      </li>
+    `,
+  },
+  {
+    name: "Mekanisme",
+    scroll: true,
+    backdrop: true,
+    title: "Mekanisme Terjadinya Tsunami",
+    text: `
+      Tsunami terjadi melalui beberapa tahapan mekanisme:
+      <br><br>
+      <li>Inisiasi
+        <ul>
+          Gempa bumi atau gangguan lainnya menyebabkan perpindahan besar volume air.
+        </ul>
+      </li>
+      <li>Propagasi
+        <ul>
+          Gelombang tsunami mulai menyebar dari sumbernya dengan kecepatan tinggi, sering kali lebih dari 800 km/jam di laut dalam.
+        </ul>
+      </li>
+      <li>Amplifikasi
+        <ul>
+          Saat gelombang mendekati pantai, kedalaman air yang menurun menyebabkan gelombang melambat dan tinggi gelombang meningkat secara drastis.
+        </ul>
+      </li>
+      <li>Inundasi
+        <ul>
+          Gelombang tsunami menghantam pantai, membanjiri daratan dengan air dan membawa puing-puing, sering kali menyebabkan kerusakan besar.
+        </ul>
+      </li>
+    `,
+  },
+  {
+    name: "Dampak",
+    scroll: true,
+    backdrop: true,
+    title: "Dampak Tsunami",
+    text: `
+      Tsunami bisa menyebabkan berbagai dampak yang merugikan, termasuk:
+      <br><br>
+      <li>Kerusakan Infrastruktur
+        <ul>
+          Bangunan, jembatan, jalan, dan infrastruktur lainnya bisa rusak parah atau hancur oleh kekuatan air yang datang.
+        </ul>
+      </li>
+      <li>Korban Jiwa dan Luka-luka
+        <ul>
+          Tsunami bisa menyebabkan banyak korban jiwa dan cedera karena kekuatan air dan puing-puing yang terbawa.
+        </ul>
+      </li>
+      <li>Banjir
+        <ul>
+          Air laut yang masuk ke daratan bisa menyebabkan banjir yang merusak lahan pertanian dan sumber air bersih.
+        </ul>
+      </li>
+      <li>Lingkungan
+        <ul>
+          Ekosistem pesisir, termasuk terumbu karang dan hutan bakau, bisa rusak oleh tsunami.
+        </ul>
+      </li>
+    `,
+  },
+];
 
-const option2 = {
-  name: "Jenis Erupsi",
-  scroll: true,
-  backdrop: true,
-  title: "Jenis-jenis Erupsi Gunung Berapi",
-  text: `
-  Erupsi gunung berapi dapat dibedakan berdasarkan karakteristiknya:
-  <br><br>
-  <li>Erupsi Efusif
-    <ul>
-    Lava mengalir keluar dari gunung berapi dengan relatif tenang tanpa ledakan besar. Lava ini biasanya bersifat basaltik dan mengalir dengan cepat.
-    </ul>
-  </li>
-  <li>Erupsi Eksplosif
-    <ul>
-    Letusan yang disertai ledakan besar, mengeluarkan abu, gas, dan material piroklastik dengan kekuatan besar. Erupsi jenis ini bisa sangat berbahaya dan merusak.
-    </ul>
-  </li>
-  <li>Erupsi Strombolian
-    <ul>
-    Letusan periodik dengan ledakan kecil hingga menengah, seringkali disertai lontaran lava pijar.
-    </ul>
-  </li>
-  <li>Erupsi Plinian
-    <ul>
-    Letusan sangat eksplosif yang mengeluarkan kolom abu tinggi ke atmosfer dan bisa menyebabkan hujan abu yang luas.
-    </ul>
-  </li>
-  `,
-};
-
-const option3 = {
-  name: "Dampak",
-  scroll: true,
-  backdrop: true,
-  title: "Dampak Gunung Meletus",
-  text: `
-  Letusan gunung berapi dapat memiliki berbagai dampak, baik langsung maupun tidak langsung:
-  <br><br>
-  <li>Kerusakan Lingkungan
-    <ul>
-    Lava, abu, dan material piroklastik bisa merusak vegetasi, mengubur lahan pertanian, dan merusak bangunan.
-    </ul>
-  </li>
-  <li>Korban Jiwa dan Cedera
-    <ul>
-    Letusan besar bisa menyebabkan korban jiwa dan cedera akibat runtuhan material, gas beracun, atau panas yang ekstrem.
-    </ul>
-  </li>
-  <li>Gangguan Transportasi
-    <ul>
-    Abu vulkanik yang beterbangan bisa mengganggu penerbangan dan menutupi jalan.
-    </ul>
-  </li>
-  <li>Bencana Sekunder
-    <ul>
-    Letusan bisa memicu bencana sekunder seperti banjir lahar, longsor, dan tsunami (jika letusan terjadi di bawah laut).
-    </ul>
-  </li>
-  <li>Perubahan Iklim
-    <ul>
-    Abu vulkanik dan gas seperti sulfur dioksida yang dilepaskan ke atmosfer bisa mempengaruhi iklim dengan mendinginkan suhu global sementara.
-    </ul>
-  </li>
-  `,
-};
 
 const accordionItems1 = [
   {
-    header: "Edukasi Masyarakat",
-    body: "Mengedukasi masyarakat tentang tindakan yang harus dilakukan saat Gunung Meletus terjadi, seperti berlindung di bawah meja atau menjauh dari kaca.",
+    header: "Pendidikan dan Kesadaran",
+    body: "Meningkatkan kesadaran masyarakat tentang risiko tsunami dan cara mengidentifikasi tanda-tanda peringatan."
   },
   {
-    header: "Bangunan Tahan Gempa",
-    body: "Membangun dan memperkuat bangunan agar tahan terhadap Gunung Meletus, menggunakan teknik konstruksi yang sesuai.",
+    header: "Perencanaan Tata Ruang",
+    body: "Mengembangkan zona evakuasi dan menghindari pembangunan di daerah rendah yang rawan tergenang air laut."
   },
   {
-    header: "Latihan dan Simulasi",
-    body: "Mengadakan latihan dan simulasi secara rutin untuk meningkatkan kesiapsiagaan masyarakat dan petugas penanggulangan bencana.",
+    header: "Sistem Peringatan Dini",
+    body: "Membangun dan memelihara sistem peringatan dini tsunami yang efektif dan memastikan masyarakat dapat menerima informasi dengan cepat."
   },
+  {
+    header: "Evakuasi",
+    body: "Mengembangkan rencana evakuasi yang terinci dan mengadakan latihan evakuasi secara berkala."
+  },
+  {
+    header: "Infrastruktur Pelindung",
+    body: "Membangun struktur pelindung seperti tanggul, danau buatan, atau vegetasi pantai yang dapat meredam gelombang tsunami."
+  },
+  {
+    header: "Pendidikan Penanganan Darurat",
+    body: "Melatih masyarakat dalam keterampilan penanganan darurat dan pertolongan pertama untuk membantu korban tsunami."
+  },
+  {
+    header: "Komitmen Masyarakat",
+    body: "Menggalang komitmen masyarakat untuk berpartisipasi aktif dalam upaya mitigasi dan kesiapsiagaan tsunami."
+  }
 ];
 
 const accordionItems2 = [
   {
-    header: "Evakuasi",
-    body: "Mengarahkan evakuasi segera ke area yang aman, menjauh dari bangunan tinggi dan struktur yang dapat runtuh.",
+    header: "Tetap Tenang",
+    body: "Jangan panik, tetap tenang untuk dapat mengambil keputusan yang tepat dan cepat."
   },
   {
-    header: "Informasi Darurat",
-    body: "Menyebarkan informasi terkini tentang situasi gempa melalui media dan sistem komunikasi darurat.",
+    header: "Segera Menuju Ke Tempat Tinggi",
+    body: "Segera bergerak menuju ke daerah yang lebih tinggi atau ke zona evakuasi yang telah ditentukan."
   },
   {
-    header: "Koordinasi",
-    body: "Koordinasi antara pemerintah, organisasi non-pemerintah, dan tim penyelamat untuk memastikan respons yang cepat dan efektif.",
+    header: "Hindari Pantai",
+    body: "Jauhi daerah pantai, muara sungai, dan area terbuka lainnya yang rentan terkena tsunami."
   },
+  {
+    header: "Dengarkan Informasi Terbaru",
+    body: "Dengarkan radio atau sumber informasi lainnya untuk informasi terbaru dan instruksi dari pihak berwenang."
+  },
+  {
+    header: "Bantu Korban",
+    body: "Berikan pertolongan pertama kepada korban yang terluka jika aman untuk melakukannya."
+  }
 ];
 
 const accordionItems3 = [
   {
-    header: "Bantuan Darurat",
-    body: "Menyediakan bantuan seperti makanan, air bersih, dan tempat tinggal sementara bagi korban gempa.",
+    header: "Penilaian Kerusakan",
+    body: "Melakukan penilaian kerusakan untuk menentukan langkah-langkah pemulihan yang dibutuhkan."
   },
   {
-    header: "Rekonstruksi",
-    body: "Memulai rekonstruksi bangunan yang rusak dengan memperhatikan standar keamanan yang lebih tinggi.",
+    header: "Pembersihan dan Perbaikan Infrastruktur",
+    body: "Memulai proses pembersihan material puing dan memulihkan infrastruktur yang rusak."
   },
   {
-    header: "Dukungan Psikososial",
-    body: "Memberikan dukungan psikososial kepada korban yang mengalami trauma akibat gempa.",
+    header: "Bantuan Medis dan Psikologis",
+    body: "Menyediakan bantuan medis untuk korban yang terluka dan dukungan psikologis untuk yang memerlukan."
   },
+  {
+    header: "Rekonstruksi Perumahan dan Fasilitas Umum",
+    body: "Rekonstruksi perumahan, sekolah, rumah sakit, dan fasilitas umum lainnya yang rusak akibat tsunami."
+  },
+  {
+    header: "Pemulihan Ekonomi",
+    body: "Mendorong pemulihan ekonomi lokal dengan mendukung usaha kecil dan menstabilkan mata pencaharian masyarakat."
+  },
+  {
+    header: "Evaluasi dan Pembelajaran",
+    body: "Mengadakan evaluasi terhadap respons dan rencana mitigasi yang ada untuk memperbaiki dan mempersiapkan diri lebih baik di masa depan."
+  }
 ];
 
-function GempaBumi() {
+function Tsunami() {
   const contentStyle = {
     position: "relative",
     zIndex: 0,
@@ -173,28 +210,23 @@ function GempaBumi() {
   return (
     <div className="SubPenanganan" style={contentStyle}>
       <BackgroundVideo src={bgvideo} />
-      <BannerPhoto imageUrl={BannerHome} />
+      <BannerPhoto imageUrl={BannerBencana} />
       <NavigationBar />
       <Container fluid>
         <h1>Tsunami</h1>
         <p className="Penjelasan">
-          Gunung meletus atau erupsi gunung berapi adalah peristiwa keluarnya
-          material dari dalam bumi ke permukaan melalui kawah atau rekahan di
-          gunung berapi. Material yang dikeluarkan bisa berupa lava, gas
-          vulkanik, abu vulkanik, dan batuan piroklastik. Erupsi gunung berapi
-          bisa sangat destruktif dan mempengaruhi lingkungan sekitar, serta
-          kehidupan manusia.
+          Tsunami adalah serangkaian gelombang laut besar yang disebabkan oleh
+          gangguan besar di bawah permukaan laut, seperti gempa bumi, letusan
+          gunung berapi, atau tanah longsor. Tsunami bisa menyebabkan kerusakan
+          besar di wilayah pesisir dan seringkali datang dengan sedikit
+          peringatan.
         </p>
         <div style={containerStyle}>
-          <div style={buttonStyle}>
-            <BencanaOffcard {...option1} />
-          </div>
-          <div style={buttonStyle}>
-            <BencanaOffcard {...option2} />
-          </div>
-          <div style={buttonStyle}>
-            <BencanaOffcard {...option3} />
-          </div>
+          {options.map((option, index) => (
+            <div style={buttonStyle} key={index}>
+              <BencanaOffcard {...option} />
+            </div>
+          ))}
         </div>
 
         <Row>
@@ -209,7 +241,7 @@ function GempaBumi() {
         <Row>
           <Col className="d-flex justify-content-center">
             <KontenBencanaCard
-              title="Respons saat Gunung Meletus Terjadi:"
+              title="Respons saat Tsunami Terjadi:"
               imageSrc={step2Image}
               accordionItems={accordionItems2}
             />
@@ -218,7 +250,7 @@ function GempaBumi() {
         <Row>
           <Col className="d-flex justify-content-center">
             <KontenBencanaCard
-              title="Pemulihan setelah Gunung Meletus:"
+              title="Pemulihan setelah Tsunami:"
               imageSrc={step3Image}
               accordionItems={accordionItems3}
             />
@@ -230,4 +262,4 @@ function GempaBumi() {
   );
 }
 
-export default GempaBumi;
+export default Tsunami;

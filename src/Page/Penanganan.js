@@ -16,7 +16,7 @@ import "./Penanganan.css";
 import Footer from "../Component/Footer";
 import BannerPhoto from "../Component/BannerPhoto";
 import BannerHome from "../Image/Banner/EarthDisaster.jpg";
-import bgvideo from "../Video/Fire.mp4";
+import bgvideo from "../Video/SpaceView.mp4";
 import BackgroundVideo from "../Component/BackgroundVideo";
 
 function Penanganan() {

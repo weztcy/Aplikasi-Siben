@@ -10,7 +10,7 @@ function BencanaOffcard({ name, scroll, backdrop, title, text }) {
 
   return (
     <>
-      <Button variant="primary" onClick={toggleShow} style={{width:"100%", height:"50px"}}>
+      <Button variant="primary" onClick={toggleShow} style={{width:"100%", height:"70px", fontSize:"20px"}}>
         {name}
       </Button>
       <Offcanvas
@@ -18,10 +18,10 @@ function BencanaOffcard({ name, scroll, backdrop, title, text }) {
         onHide={handleClose}
         scroll={scroll}
         backdrop={backdrop}
-        style={{textAlign:"justify", padding:"20px", width:"450px", backgroundColor:"#383838", color:"white"}}
+        style={{textAlign:"justify", padding:"20px 20px", width:"450px", backgroundColor:"#383838", color:"white"}}
       >
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>{title}</Offcanvas.Title>
+        <Offcanvas.Header closeButton className="d-flex justify-content-center">
+          <Offcanvas.Title style={{width:"100%", textAlign:"center", paddingLeft:"15px", paddingRight:"15px"}}>{title}</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body dangerouslySetInnerHTML={{ __html: text }} />
       </Offcanvas>

@@ -13,7 +13,7 @@ import gambar8 from "../Image/Berita/penanganan-longsor-di-jalan-wilayah-sang-hy
 import Footer from "../Component/Footer";
 import BannerPhoto from "../Component/BannerPhoto";
 import BannerHome from "../Image/Banner/EarthDisaster.jpg";
-import bgvideo from "../Video/Cloud.mp4";
+import bgvideo from "../Video/RainWater.mp4";
 import BackgroundVideo from "../Component/BackgroundVideo";
 
 const articles = [

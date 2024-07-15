@@ -45,29 +45,33 @@ function NavigationBar() {
                 <NavDropdown.Item as={Link} to="/gempa-bumi">
                   Gempa Bumi
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Tsunami</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item as={Link} to="/tsunami">
+                  Tsunami
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/gunung-meletus">
                   Gunung Meletus
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Banjir</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item as={Link} to="/banjir">
+                  Banjir
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/tanah-longsor">
                   Tanah Longsor
                 </NavDropdown.Item>
-                {/* <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item as={Link} to="/angin-topan">
                   Angin Topan
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item as={Link} to="/kekeringan">
                   Kekeringan
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item as={Link} to="/kebakaran-hutan">
                   Kebakaran Hutan
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item as={Link} to="/gelombang-panas">
                   Gelombang Panas
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item as={Link} to="/badai-petir">
                   Badai Petir
-                </NavDropdown.Item> */}
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={Link} to="/penanganan">
                   Lihat Selengkapnya

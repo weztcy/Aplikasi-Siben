@@ -9,11 +9,11 @@ function KontenBencanaCard({ title, imageSrc, accordionItems }) {
     <Card style={{ width: '50rem', marginBottom: '50px' }}>
       <Card.Img variant="top" src={imageSrc} />
       <Card.Body>
-        <Card.Title style={{ marginBottom: "20px" }}>{title}</Card.Title>
+        <Card.Title style={{ marginTop: "30px",marginBottom: "50px", fontSize: "30px" }}>{title}</Card.Title>
         <Row noGutters>
           <Col md={12}>
             {/* Accordion component starts here */}
-            <Accordion defaultActiveKey={['0']} alwaysOpen style={{ textAlign: "justify" }}>
+            <Accordion defaultActiveKey={['null']} alwaysOpen style={{ textAlign: "justify" }}>
               {accordionItems.map((item, index) => (
                 <Accordion.Item eventKey={index.toString()} key={index}>
                   <Accordion.Header>{item.header}</Accordion.Header>
