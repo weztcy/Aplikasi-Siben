@@ -9,7 +9,7 @@ export const fetchWeather = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      "https://ibnux.github.io/BMKG-importer/cuaca/501262.json"
+      "https://ibnux.github.io/BMKG-importer/cuaca/501366.json"
     );
     dispatch({ type: FETCH_WEATHER_SUCCESS, payload: response.data });
   } catch (error) {
