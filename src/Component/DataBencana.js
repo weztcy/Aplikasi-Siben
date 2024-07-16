@@ -64,7 +64,7 @@ function DataBencana() {
           Tambah Data Bencana
         </Button>
         <Form.Group controlId="itemsPerPage" style={{ width: "220px" }}>
-          <Form.Label style={{ fontSize: "20px"}}>Data / Halaman</Form.Label>
+          <Form.Label style={{ fontSize: "20px" }}>Data / Halaman</Form.Label>
           <Form.Control
             as="select"
             value={itemsPerPage}
@@ -131,15 +131,24 @@ function DataBencana() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          marginTop: "20px",
         }}
       >
-        <Button onClick={prevPage} disabled={currentPage === 1}>
+        <Button
+          style={{ width: "150px", height: "50px" }}
+          onClick={prevPage}
+          disabled={currentPage === 1}
+        >
           Sebelumnya
         </Button>
         <span style={{ margin: "0 30px" }}>
           Halaman {currentPage} dari {totalPages}
         </span>
-        <Button onClick={nextPage} disabled={currentPage === totalPages}>
+        <Button
+          style={{ width: "150px", height: "50px" }}
+          onClick={nextPage}
+          disabled={currentPage === totalPages}
+        >
           Selanjutnya
         </Button>
       </div>
