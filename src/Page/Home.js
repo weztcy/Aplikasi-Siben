@@ -76,7 +76,7 @@ function Home() {
               videoUrl={video4}
               linkTo="/cuaca"
               modalTitle="Informasi Ramalan Cuaca"
-              modalContent="Halaman ramalan cuaca di Kota Semarang menyajikan informasi terbaru mengenai kondisi cuaca saat ini dan prakiraan cuaca mendatang di Semarang. Anda dapat menemukan data terkini mengenai suhu udara, kelembapan, kecepatan angin, dan kondisi cuaca."
+              modalContent="Halaman ramalan cuaca di Kota Semarang menyajikan informasi terbaru mengenai kondisi cuaca saat ini dan prakiraan cuaca mendatang di Semarang. Anda dapat menemukan data terkini mengenai suhu udara, kelembapan, dan kondisi cuaca."
             />
           </Col>
         </Row>
