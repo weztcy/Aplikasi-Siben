@@ -112,7 +112,7 @@ function Home() {
           </Carousel.Item>
         </Carousel>
       </Container>
-      <h2>Kantor BPBD Pusat</h2>
+      <h2>Kantor BNPB Pusat</h2>
       <iframe
         width="1300"
         height="600"
