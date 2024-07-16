@@ -6,7 +6,10 @@ import Col from "react-bootstrap/Col";
 
 function KontenBencanaCard({ title, imageSrc, accordionItems }) {
   return (
-    <Card className="bg-dark text-white" style={{ width: "50rem", marginBottom: "50px" }}>
+    <Card
+      className="bg-dark text-white"
+      style={{ width: "50rem", marginBottom: "50px" }}
+    >
       <Card.Img variant="top" src={imageSrc} />
       <Card.Body>
         <Card.Title
@@ -24,7 +27,9 @@ function KontenBencanaCard({ title, imageSrc, accordionItems }) {
               {accordionItems.map((item, index) => (
                 <Accordion.Item eventKey={index.toString()} key={index}>
                   <Accordion.Header>{item.header}</Accordion.Header>
-                  <Accordion.Body className="bg-dark text-white">{item.body}</Accordion.Body>
+                  <Accordion.Body className="bg-dark text-white">
+                    {item.body}
+                  </Accordion.Body>
                 </Accordion.Item>
               ))}
             </Accordion>

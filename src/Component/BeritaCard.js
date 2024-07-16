@@ -28,13 +28,22 @@ function BeritaCard({ date, title, imageUrl, author, linkUrl }) {
             }}
           />
         </div>
-        <Card.Header className="bg-secondary text-white" style={{ fontSize: "13px", textAlign: "right" }}>
+        <Card.Header
+          className="bg-secondary text-white"
+          style={{ fontSize: "13px", textAlign: "right" }}
+        >
           {date}
         </Card.Header>
-        <Card.Body style={{ textAlign: "justify",borderRadius: "0px 0px 70px 15px" }} className="bg-dark text-white">
+        <Card.Body
+          style={{ textAlign: "justify", borderRadius: "0px 0px 70px 15px" }}
+          className="bg-dark text-white"
+        >
           <blockquote className="blockquote mb-0">
             <p style={{ fontSize: "20px" }}>{title}</p>
-            <footer className="blockquote-footer text-white" style={{ fontSize: "13px" }}>
+            <footer
+              className="blockquote-footer text-white"
+              style={{ fontSize: "13px" }}
+            >
               {author}
             </footer>
           </blockquote>

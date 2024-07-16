@@ -106,106 +106,105 @@ const options = [
   },
 ];
 
-
 const accordionItems1 = [
   {
     header: "Pendidikan dan Kesadaran",
-    body: "Meningkatkan kesadaran masyarakat tentang risiko gunung meletus dan cara mengurangi dampaknya melalui pelatihan dan pendidikan."
+    body: "Meningkatkan kesadaran masyarakat tentang risiko gunung meletus dan cara mengurangi dampaknya melalui pelatihan dan pendidikan.",
   },
   {
     header: "Perencanaan Tata Ruang",
-    body: "Menghindari pembangunan di daerah rawan letusan dan mengimplementasikan peraturan bangunan yang sesuai."
+    body: "Menghindari pembangunan di daerah rawan letusan dan mengimplementasikan peraturan bangunan yang sesuai.",
   },
   {
     header: "Peningkatan Struktur Bangunan",
-    body: "Memastikan bangunan memenuhi standar ketahanan terhadap abu vulkanik dan material letusan lainnya."
+    body: "Memastikan bangunan memenuhi standar ketahanan terhadap abu vulkanik dan material letusan lainnya.",
   },
   {
     header: "Infrastruktur",
-    body: "Membangun dan memperbaiki infrastruktur seperti jalan evakuasi dan tempat penampungan yang aman dari letusan."
+    body: "Membangun dan memperbaiki infrastruktur seperti jalan evakuasi dan tempat penampungan yang aman dari letusan.",
   },
   {
     header: "Rencana Darurat",
-    body: "Mengembangkan dan menguji rencana darurat untuk keluarga, komunitas, dan instansi pemerintah dalam menghadapi letusan gunung berapi."
+    body: "Mengembangkan dan menguji rencana darurat untuk keluarga, komunitas, dan instansi pemerintah dalam menghadapi letusan gunung berapi.",
   },
   {
     header: "Latihan Evakuasi",
-    body: "Mengadakan latihan evakuasi secara berkala di sekolah, tempat kerja, dan komunitas."
+    body: "Mengadakan latihan evakuasi secara berkala di sekolah, tempat kerja, dan komunitas.",
   },
   {
     header: "Perlengkapan Darurat",
-    body: "Menyediakan perlengkapan darurat yang mencakup masker, kacamata pelindung, air, makanan, obat-obatan, dan radio."
+    body: "Menyediakan perlengkapan darurat yang mencakup masker, kacamata pelindung, air, makanan, obat-obatan, dan radio.",
   },
   {
     header: "Komunikasi",
-    body: "Mengembangkan sistem komunikasi yang dapat diandalkan untuk menginformasikan masyarakat tentang status gunung berapi dan langkah-langkah yang harus diambil."
+    body: "Mengembangkan sistem komunikasi yang dapat diandalkan untuk menginformasikan masyarakat tentang status gunung berapi dan langkah-langkah yang harus diambil.",
   },
   {
     header: "Titik Kumpul",
-    body: "Menentukan lokasi titik kumpul yang aman dan mudah diakses setelah letusan terjadi."
-  }
+    body: "Menentukan lokasi titik kumpul yang aman dan mudah diakses setelah letusan terjadi.",
+  },
 ];
 
 const accordionItems2 = [
   {
     header: "Tetap Tenang",
-    body: "Jangan panik, segera berlindung di tempat yang aman dari material letusan seperti batu dan abu."
+    body: "Jangan panik, segera berlindung di tempat yang aman dari material letusan seperti batu dan abu.",
   },
   {
     header: "Lindungi Diri",
-    body: "Gunakan masker dan kacamata pelindung untuk melindungi diri dari abu vulkanik."
+    body: "Gunakan masker dan kacamata pelindung untuk melindungi diri dari abu vulkanik.",
   },
   {
     header: "Evakuasi Segera",
-    body: "Ikuti instruksi evakuasi dari pihak berwenang dan segera menuju ke tempat penampungan yang aman."
+    body: "Ikuti instruksi evakuasi dari pihak berwenang dan segera menuju ke tempat penampungan yang aman.",
   },
   {
     header: "Hindari Area Berbahaya",
-    body: "Jauhkan diri dari sungai atau aliran lahar yang berpotensi membawa material letusan."
+    body: "Jauhkan diri dari sungai atau aliran lahar yang berpotensi membawa material letusan.",
   },
   {
     header: "Pantau Informasi",
-    body: "Dengarkan radio atau sumber informasi terpercaya untuk mengetahui kondisi terkini dan instruksi dari pihak berwenang."
+    body: "Dengarkan radio atau sumber informasi terpercaya untuk mengetahui kondisi terkini dan instruksi dari pihak berwenang.",
   },
   {
     header: "Periksa Kesehatan",
-    body: "Periksa kesehatan diri dan orang lain, terutama pernapasan yang mungkin terganggu oleh abu vulkanik."
-  }
+    body: "Periksa kesehatan diri dan orang lain, terutama pernapasan yang mungkin terganggu oleh abu vulkanik.",
+  },
 ];
 
 const accordionItems3 = [
   {
     header: "Penilaian Kerusakan",
-    body: "Periksa kerusakan bangunan dan infrastrukturnya, pastikan bangunan aman sebelum kembali masuk."
+    body: "Periksa kerusakan bangunan dan infrastrukturnya, pastikan bangunan aman sebelum kembali masuk.",
   },
   {
     header: "Pembersihan Abu",
-    body: "Bersihkan abu vulkanik dengan hati-hati untuk mencegah gangguan kesehatan."
+    body: "Bersihkan abu vulkanik dengan hati-hati untuk mencegah gangguan kesehatan.",
   },
   {
     header: "Bantuan Medis",
-    body: "Segera minta bantuan medis untuk yang terluka atau mengalami gangguan pernapasan."
+    body: "Segera minta bantuan medis untuk yang terluka atau mengalami gangguan pernapasan.",
   },
   {
     header: "Tempat Penampungan",
-    body: "Manfaatkan tempat penampungan sementara yang disediakan pemerintah atau organisasi bantuan."
+    body: "Manfaatkan tempat penampungan sementara yang disediakan pemerintah atau organisasi bantuan.",
   },
   {
     header: "Dukungan Psikologis",
-    body: "Berikan dukungan psikologis kepada korban letusan, terutama anak-anak dan kelompok rentan."
+    body: "Berikan dukungan psikologis kepada korban letusan, terutama anak-anak dan kelompok rentan.",
   },
   {
     header: "Pembangunan Kembali",
-    body: "Rekonstruksi bangunan dan infrastruktur yang rusak dengan memperhatikan standar ketahanan terhadap letusan."
+    body: "Rekonstruksi bangunan dan infrastruktur yang rusak dengan memperhatikan standar ketahanan terhadap letusan.",
   },
   {
     header: "Pemulihan Ekonomi",
-    body: "Bantu pemulihan ekonomi lokal dengan mendukung usaha kecil dan penyediaan lapangan kerja."
+    body: "Bantu pemulihan ekonomi lokal dengan mendukung usaha kecil dan penyediaan lapangan kerja.",
   },
   {
     header: "Perbaikan Sistem",
-    body: "Evaluasi dan perbaiki sistem kesiapsiagaan dan respons untuk menghadapi bencana di masa depan."
-  }
+    body: "Evaluasi dan perbaiki sistem kesiapsiagaan dan respons untuk menghadapi bencana di masa depan.",
+  },
 ];
 
 function GunungMeletus() {

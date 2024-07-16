@@ -106,86 +106,85 @@ const options = [
   },
 ];
 
-
 const accordionItems1 = [
   {
     header: "Pendidikan dan Kesadaran",
-    body: "Meningkatkan kesadaran masyarakat tentang risiko tsunami dan cara mengidentifikasi tanda-tanda peringatan."
+    body: "Meningkatkan kesadaran masyarakat tentang risiko tsunami dan cara mengidentifikasi tanda-tanda peringatan.",
   },
   {
     header: "Perencanaan Tata Ruang",
-    body: "Mengembangkan zona evakuasi dan menghindari pembangunan di daerah rendah yang rawan tergenang air laut."
+    body: "Mengembangkan zona evakuasi dan menghindari pembangunan di daerah rendah yang rawan tergenang air laut.",
   },
   {
     header: "Sistem Peringatan Dini",
-    body: "Membangun dan memelihara sistem peringatan dini tsunami yang efektif dan memastikan masyarakat dapat menerima informasi dengan cepat."
+    body: "Membangun dan memelihara sistem peringatan dini tsunami yang efektif dan memastikan masyarakat dapat menerima informasi dengan cepat.",
   },
   {
     header: "Evakuasi",
-    body: "Mengembangkan rencana evakuasi yang terinci dan mengadakan latihan evakuasi secara berkala."
+    body: "Mengembangkan rencana evakuasi yang terinci dan mengadakan latihan evakuasi secara berkala.",
   },
   {
     header: "Infrastruktur Pelindung",
-    body: "Membangun struktur pelindung seperti tanggul, danau buatan, atau vegetasi pantai yang dapat meredam gelombang tsunami."
+    body: "Membangun struktur pelindung seperti tanggul, danau buatan, atau vegetasi pantai yang dapat meredam gelombang tsunami.",
   },
   {
     header: "Pendidikan Penanganan Darurat",
-    body: "Melatih masyarakat dalam keterampilan penanganan darurat dan pertolongan pertama untuk membantu korban tsunami."
+    body: "Melatih masyarakat dalam keterampilan penanganan darurat dan pertolongan pertama untuk membantu korban tsunami.",
   },
   {
     header: "Komitmen Masyarakat",
-    body: "Menggalang komitmen masyarakat untuk berpartisipasi aktif dalam upaya mitigasi dan kesiapsiagaan tsunami."
-  }
+    body: "Menggalang komitmen masyarakat untuk berpartisipasi aktif dalam upaya mitigasi dan kesiapsiagaan tsunami.",
+  },
 ];
 
 const accordionItems2 = [
   {
     header: "Tetap Tenang",
-    body: "Jangan panik, tetap tenang untuk dapat mengambil keputusan yang tepat dan cepat."
+    body: "Jangan panik, tetap tenang untuk dapat mengambil keputusan yang tepat dan cepat.",
   },
   {
     header: "Segera Menuju Ke Tempat Tinggi",
-    body: "Segera bergerak menuju ke daerah yang lebih tinggi atau ke zona evakuasi yang telah ditentukan."
+    body: "Segera bergerak menuju ke daerah yang lebih tinggi atau ke zona evakuasi yang telah ditentukan.",
   },
   {
     header: "Hindari Pantai",
-    body: "Jauhi daerah pantai, muara sungai, dan area terbuka lainnya yang rentan terkena tsunami."
+    body: "Jauhi daerah pantai, muara sungai, dan area terbuka lainnya yang rentan terkena tsunami.",
   },
   {
     header: "Dengarkan Informasi Terbaru",
-    body: "Dengarkan radio atau sumber informasi lainnya untuk informasi terbaru dan instruksi dari pihak berwenang."
+    body: "Dengarkan radio atau sumber informasi lainnya untuk informasi terbaru dan instruksi dari pihak berwenang.",
   },
   {
     header: "Bantu Korban",
-    body: "Berikan pertolongan pertama kepada korban yang terluka jika aman untuk melakukannya."
-  }
+    body: "Berikan pertolongan pertama kepada korban yang terluka jika aman untuk melakukannya.",
+  },
 ];
 
 const accordionItems3 = [
   {
     header: "Penilaian Kerusakan",
-    body: "Melakukan penilaian kerusakan untuk menentukan langkah-langkah pemulihan yang dibutuhkan."
+    body: "Melakukan penilaian kerusakan untuk menentukan langkah-langkah pemulihan yang dibutuhkan.",
   },
   {
     header: "Pembersihan dan Perbaikan Infrastruktur",
-    body: "Memulai proses pembersihan material puing dan memulihkan infrastruktur yang rusak."
+    body: "Memulai proses pembersihan material puing dan memulihkan infrastruktur yang rusak.",
   },
   {
     header: "Bantuan Medis dan Psikologis",
-    body: "Menyediakan bantuan medis untuk korban yang terluka dan dukungan psikologis untuk yang memerlukan."
+    body: "Menyediakan bantuan medis untuk korban yang terluka dan dukungan psikologis untuk yang memerlukan.",
   },
   {
     header: "Rekonstruksi Perumahan dan Fasilitas Umum",
-    body: "Rekonstruksi perumahan, sekolah, rumah sakit, dan fasilitas umum lainnya yang rusak akibat tsunami."
+    body: "Rekonstruksi perumahan, sekolah, rumah sakit, dan fasilitas umum lainnya yang rusak akibat tsunami.",
   },
   {
     header: "Pemulihan Ekonomi",
-    body: "Mendorong pemulihan ekonomi lokal dengan mendukung usaha kecil dan menstabilkan mata pencaharian masyarakat."
+    body: "Mendorong pemulihan ekonomi lokal dengan mendukung usaha kecil dan menstabilkan mata pencaharian masyarakat.",
   },
   {
     header: "Evaluasi dan Pembelajaran",
-    body: "Mengadakan evaluasi terhadap respons dan rencana mitigasi yang ada untuk memperbaiki dan mempersiapkan diri lebih baik di masa depan."
-  }
+    body: "Mengadakan evaluasi terhadap respons dan rencana mitigasi yang ada untuk memperbaiki dan mempersiapkan diri lebih baik di masa depan.",
+  },
 ];
 
 function Tsunami() {

@@ -104,7 +104,6 @@ const options = [
   },
 ];
 
-
 const accordionItems1 = [
   {
     header: "Pencegahan Kebakaran",

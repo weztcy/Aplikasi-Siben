@@ -85,7 +85,6 @@ const options = [
   },
 ];
 
-
 const accordionItems1 = [
   {
     header: "Pendidikan dan Kesadaran",
