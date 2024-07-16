@@ -1,5 +1,3 @@
-// src/components/DeleteDataBencana.js
-
 import React from "react";
 import { useDispatch } from "react-redux";
 import { fetchDisasters } from "../redux/actions/disasterActions";

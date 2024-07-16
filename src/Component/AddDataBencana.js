@@ -1,5 +1,3 @@
-// src/components/AddDataBencana.js
-
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { fetchDisasters } from "../redux/actions/disasterActions";
